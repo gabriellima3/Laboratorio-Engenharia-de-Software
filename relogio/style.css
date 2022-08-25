@@ -1,0 +1,28 @@
+
+body{
+    background-color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    align-items: 50px;
+    justify-content: center;
+}
+
+#relogio{
+    background-color: black;
+    text-align: center;
+    width: 80%;
+    height: 90px;
+    font-size: 100px;
+    border: 0;
+    color: rgb(18, 160, 11);
+    
+    
+}
