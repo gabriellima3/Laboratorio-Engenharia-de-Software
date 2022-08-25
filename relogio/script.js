@@ -1,8 +1,8 @@
 function relogio(){
-    var data=new Date();
-    var hor=data.getHours();
-    var min=data.getMinutes();
-    var seg=data.getSeconds();
+    let data=new Date();
+    let hor=data.getHours();
+    let min=data.getMinutes();
+    let seg=data.getSeconds();
     
     if(hor < 10){
         hor="0"+hor;
@@ -14,9 +14,9 @@ function relogio(){
         seg="0"+seg;
     }
     
-    var horas=hor + ":" + min + ":" + seg;
+    let horas=hor + ":" + min + ":" + seg;
     
     document.getElementById("relogio").value=horas;
 }
 
-var timer=setInterval(relogio,1000);
+let timer=setInterval(relogio,1000);
