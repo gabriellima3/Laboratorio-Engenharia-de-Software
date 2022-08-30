@@ -1,15 +1,21 @@
+var envioPalavra = document.getElementById("envioPalavra");
+envioPalavra.addEventListener("click", Palindromo);
 
-function conferirPalavra(palavra){
-	let reverse = palavra.split('').reverse().join('');
-	if (palavra = reverse) {
-		document.write('A palavra é um palíndromo')
-	} else{
-		document.write('A palavra não é um palíndromo')
+function inverter(str) {
+    var newString = "";
+    for (var i = str.length - 1; i >= 0; i--) { 
+        newString += str[i];
 	}
+	return newString;
 }
-let palavra = document.getElementById('campoPalavra');
-envioPalavra.addEventListener('click', conferirPalavra(palavra));
 
-/* SPLIT divide a string em substring e coloca numa array e o retorna;
-REVERSE inverte os itens de uma array
-JOIN junta os elementos da array em uma stringe retorna essa string */
+function Palindromo() {
+    let palavra = document.getElementById('campoPalavra').value;
+    let palavraInvertida = inverter(palavra);
+
+    if (palavra == palavraInvertida)
+        alert("O texto é um palíndromo")
+    else
+        alert("O texto não é palíndromo") 
+}
+
