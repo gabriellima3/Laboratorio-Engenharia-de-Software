@@ -14,8 +14,8 @@ function Palindromo() {
     let palavraInvertida = inverter(palavra);
 
     if (palavra == palavraInvertida)
-        alert("O texto é um palíndromo")
+        document.write("A palavra " + palavra + "é um palíndromo")
     else
-        alert("O texto não é palíndromo") 
+	document.write("A palavra " + palavra + "não é um palíndromo")
 }
 
