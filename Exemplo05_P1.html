@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>Incorporando Expressões em JSX - Parte 2</title>
+    <title>Incorporando Expressões em JSX - Parte 3</title>
     <meta charset="UTF-8">
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
@@ -13,16 +13,20 @@
     <div id="root"></div>
     <!-- type define o uso do babel no script-->
     <script type="text/babel">
-        //Sintaxe JSX (não é js nem html)
-        const user = {
-            firstName:'Gabriel',
-            lastName: 'Lima'
-        };
+        /* 
+        const element = (
+            <h1 className="greeting" id="newElement">
+                Hello, World!
+            </h1>
+        );
+        */
 
-        function formatName(user){
-            return user.firstName + ' ' + user.lastName
-        }
-        const element = (<h1>Hello, {formatName(user)}</h1>);
+        const element = React.createElement(
+            'h1',
+            {className: 'greeting'},
+            'Hello, world'
+        );
+
         ReactDOM.render(element,document.getElementById('root'));
     </script>
 </body>
