@@ -1,21 +1,21 @@
 hr{ color: red;}
 .App {
   text-align: center;
+  background-image: url(http://localhost:3000/background.jpg);
+  background-size: 100%;
 }
-
 .App-logo {
   height: 20vmin;
 }
 
 .App-header {
-  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .App-link {
@@ -28,4 +28,7 @@ hr{ color: red;}
 }
 .logo{
   float: left;
+}
+.titulo{
+  color: rgb(0, 0, 0);
 }
