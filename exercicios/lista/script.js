@@ -20,12 +20,3 @@ cadastrarCampos.addEventListener("click", function () {
     document.body.appendChild(elementoOL);
 });
 
-
-
-ordenarCampos.addEventListener("click", function () {
-    let ordenados = elementos.sort();
-    ordenar.appendChild(ordenados);
-    console.log(ordenados);
-
-});
-
