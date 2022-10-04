@@ -32,3 +32,10 @@ hr{ color: red;}
 .titulo{
   color: rgb(0, 0, 0);
 }
+#link{
+  color:rgba(211, 7, 7, 0.719);
+  text-decoration: none;
+  position: absolute;
+  margin-left: 10%
+}
+
