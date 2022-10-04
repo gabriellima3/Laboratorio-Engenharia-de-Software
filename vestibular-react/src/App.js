@@ -20,10 +20,17 @@ function App() {
           <p>Ser referência como instituição de ensino superior e pesquisa tecnológica, caracterizada pela inovação, ética e compromisso com o desenvolvimento sustentável.</p>
           <hr></hr>
           <a href="https://www.vestibularfatec.com.br/home/">
+<<<<<<< HEAD
             <img src="banner.png" className="App-logo" alt="logo" />
           </a>
         </div>
 
+=======
+          <img src="banner.png" className="App-logo" alt="logo" />
+          </a>
+      </div>
+      
+>>>>>>> 421dd22f07be2c46206dfea9682e5fd721482d10
 
       </header>
 

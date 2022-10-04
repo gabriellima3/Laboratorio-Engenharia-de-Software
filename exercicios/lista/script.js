@@ -1,4 +1,9 @@
 let cadastrarCampos = document.getElementById("cadastrar");
+let ordenarCampos = document.getElementById("ordenarCampos");
+let ordenar = document.getElementById("ordenar");
+
+
+
 cadastrarCampos.addEventListener("click", function () {
     const elementos = [];
     let campos = document.getElementById("nome").value;
